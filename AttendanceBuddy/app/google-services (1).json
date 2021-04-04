@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "842521127183",
+    "project_id": "attendancebuddy-ae17b",
+    "storage_bucket": "attendancebuddy-ae17b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842521127183:android:8ea04f1ed777688578767a",
+        "android_client_info": {
+          "package_name": "com.example.attendancebuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "842521127183-2m5ntgkl17ie4bk7gh9s3go90kkhbu3f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWV7hDPHHv7IjL8RCqHHtA6FYvHdPIUJo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "842521127183-2m5ntgkl17ie4bk7gh9s3go90kkhbu3f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
