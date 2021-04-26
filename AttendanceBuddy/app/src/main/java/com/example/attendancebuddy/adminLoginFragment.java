@@ -19,25 +19,21 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-
-public class StudentLoginFragment extends Fragment {
-
-
+public class adminLoginFragment extends Fragment {
 
     private FirebaseAuth mAuth;
     final private String TAG = "Login";
-    EditText StudenteditTextEmail;
-    EditText StudenteditTextPassword;
-    Button Studentregister;
+    EditText editTextEmail;
+    EditText editTextPassword;
+    Button register;
 
-
-    public StudentLoginFragment() {
+    public adminLoginFragment() {
         // Required empty public constructor
     }
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
 
     }
@@ -46,16 +42,16 @@ public class StudentLoginFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_student_login, container, false);
-        StudenteditTextEmail = view.findViewById(R.id.StudenteditTextTextEmailAddress);
-        StudenteditTextPassword = view.findViewById(R.id.StudenteditTextTextPassword);
+        View view = inflater.inflate(R.layout.fragment_admin_login, container, false);
+        editTextEmail = view.findViewById(R.id.editTextTextEmailAddressRegister);
+        editTextPassword = view.findViewById(R.id.editTextTextPasswordREgister);
         getActivity().setTitle("Login");
 
-        view.findViewById(R.id.StudentLoginButton).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.submitButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String email =  StudenteditTextEmail.getText().toString();
-                String password =  StudenteditTextPassword.getText().toString();
+                String email = editTextEmail.getText().toString();
+                String password = editTextPassword.getText().toString();
 
                 if(email.isEmpty()){
                     Toast.makeText(getActivity(), "Please Enter Email", Toast.LENGTH_LONG).show();
@@ -102,7 +98,7 @@ public class StudentLoginFragment extends Fragment {
 
                 }
 
-                Fragment fragment = new StudentLaunchPageFragment();
+                Fragment fragment = new adminLaunchPageFragment();
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 transaction.replace(R.id.contentView, fragment);
                 transaction.commit();
@@ -113,11 +109,11 @@ public class StudentLoginFragment extends Fragment {
             }
         });
 
-        Studentregister = (Button) view.findViewById(R.id.StudentSignUpButton);
-        Studentregister.setOnClickListener(new View.OnClickListener() {
+        register = (Button) view.findViewById(R.id.loginCancelButton);
+        register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment fragment = new StudentSignupFragment();
+                Fragment fragment = new adminSignupFragment();
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 transaction.replace(R.id.contentView, fragment);
                 transaction.commit();
@@ -126,6 +122,8 @@ public class StudentLoginFragment extends Fragment {
 
         return view;
     }
+
+
 
 
 }

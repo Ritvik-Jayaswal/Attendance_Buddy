@@ -2,39 +2,37 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout3"
+    android:id="@+id/frameLayout5"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".adminSignupFragment">
+    tools:context=".StudentSignupFragment">
 
     <EditText
-        android:id="@+id/adminName"
+        android:id="@+id/StudentSignupeditTextTextPersonName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="144dp"
+        android:layout_marginTop="104dp"
         android:ems="10"
-        android:hint="Name"
         android:inputType="textPersonName"
         android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/adminEmail"
+        android:id="@+id/StudentSignupeditTextTextEmailAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/adminName" />
+        app:layout_constraintTop_toBottomOf="@+id/StudentSignupeditTextTextPersonName" />
 
     <EditText
-        android:id="@+id/adminPassword"
+        android:id="@+id/StudentSignupeditTextTextPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -42,10 +40,10 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/adminEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/StudentSignupeditTextTextEmailAddress" />
 
     <Button
-        android:id="@+id/adminCancel"
+        android:id="@+id/StudentSignupCancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
@@ -53,10 +51,10 @@
         android:layout_marginTop="100dp"
         android:text="Cancel"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/adminPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/StudentSignupeditTextTextPassword" />
 
     <Button
-        android:id="@+id/adminSubmit"
+        android:id="@+id/StudentSignupSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
@@ -64,7 +62,6 @@
         android:layout_marginRight="45dp"
         android:text="Submit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/adminPassword" />
-
+        app:layout_constraintTop_toBottomOf="@+id/StudentSignupeditTextTextPassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

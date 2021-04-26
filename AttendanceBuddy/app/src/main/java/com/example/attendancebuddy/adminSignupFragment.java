@@ -22,7 +22,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 
-public class StudentSignupFragment extends Fragment {
+public class adminSignupFragment extends Fragment {
 
     EditText editTextEmailRegister;
     EditText editTextPasswordRegister;
@@ -33,9 +33,10 @@ public class StudentSignupFragment extends Fragment {
 
     final private String TAG = "Register";
 
-    public StudentSignupFragment() {
+    public adminSignupFragment() {
         // Required empty public constructor
     }
+
 
 
     @Override
@@ -48,12 +49,12 @@ public class StudentSignupFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view =  inflater.inflate(R.layout.fragment_student_signup, container, false);
+        View view =  inflater.inflate(R.layout.fragment_admin_signup, container, false);
         getActivity().setTitle("Register");
-        editTextEmailRegister = view.findViewById(R.id.StudentSignupeditTextTextEmailAddress);
-        editTextPasswordRegister = view.findViewById(R.id.StudentSignupeditTextTextPassword);
-        editTextName = view.findViewById(R.id.StudentSignupeditTextTextPersonName);
-        submit = (Button) view.findViewById(R.id.StudentSignupSubmit);
+        editTextEmailRegister = view.findViewById(R.id.adminEmail);
+        editTextPasswordRegister = view.findViewById(R.id.adminPassword);
+        editTextName = view.findViewById(R.id.adminName);
+        submit = (Button) view.findViewById(R.id.adminSubmit);
 
 
 
@@ -104,7 +105,7 @@ public class StudentSignupFragment extends Fragment {
                             });
                 }
 
-                Fragment fragment = new StudentLoginFragment();
+                Fragment fragment = new adminLoginFragment();
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 transaction.replace(R.id.contentView, fragment);
                 transaction.commit();
@@ -118,11 +119,11 @@ public class StudentSignupFragment extends Fragment {
 
 
 
-        cancel = (Button) view.findViewById(R.id.StudentSignupCancel);
+        cancel = (Button) view.findViewById(R.id.adminCancel);
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment fragment = new StudentLoginFragment();
+                Fragment fragment = new adminLoginFragment();
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 transaction.replace(R.id.contentView, fragment);
                 transaction.commit();
