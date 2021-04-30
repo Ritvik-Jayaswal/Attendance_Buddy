@@ -10,7 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-
+/**
+ * Admin Launch Page
+ */
 public class adminLaunchPageFragment extends Fragment {
 
     Button attendanceButton;

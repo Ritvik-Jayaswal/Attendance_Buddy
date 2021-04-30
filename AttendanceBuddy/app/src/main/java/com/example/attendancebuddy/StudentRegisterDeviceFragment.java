@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import java.util.Set;
 
 /**
- * A simple {@link Fragment} subclass.
+ * Bluetooth for student to select professor
  * Use the {@link StudentRegisterDeviceFragment#newInstance} factory method to
  * create an instance of this fragment.
  */

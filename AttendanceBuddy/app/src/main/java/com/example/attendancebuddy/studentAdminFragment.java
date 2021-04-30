@@ -9,7 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-
+/**
+ * Choose whether student or administrator
+ */
 public class studentAdminFragment extends Fragment {
 
     Button student;
